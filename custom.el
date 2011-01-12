@@ -5,6 +5,11 @@
 
 (load-file "~/.emacs.d/visual-bell.el")
 
+(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet-0.6.1c")
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/vendor/yasnippet-0.6.1c/snippets")
+
 (add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 (require 'peepopen)
